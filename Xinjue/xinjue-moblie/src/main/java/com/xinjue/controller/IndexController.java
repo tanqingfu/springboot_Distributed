@@ -7,6 +7,7 @@ import com.xinjue.meta.User;
 import com.xinjue.service.userService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -18,7 +19,7 @@ import java.util.List;
 @Controller
 public class IndexController extends BaseController {
     @Resource userService userService;
-    @RequestMapping(value = "index1")
+    @RequestMapping(value = "index1",method = RequestMethod.GET)
     public  String index(HttpServletRequest request, HttpServletResponse response) throws IOException {
         InquiryCondition InquiryCondition = new InquiryCondition();
         int total = userService.countALL(InquiryCondition);
