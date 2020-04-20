@@ -10,6 +10,10 @@ public class Mobile {
         regex(mobile);
     }
 
+    /**
+     * 通过substring字符截取
+     * @param mobile
+     */
     public static void substring(String mobile){
         String phone = mobile;
         String phoneNumber = phone.substring(0, 3) + "****" + phone.substring(7, phone.length());
@@ -20,6 +24,10 @@ public class Mobile {
         System.out.println("phone中4*：" + phoneNumber);
     }
 
+    /**
+     * 通过正则表达式替换
+     * @param mobile
+     */
     public static void regex(String mobile){
         String phone = mobile;
         String reget_mobile = "(\\d{3})\\d{4}(\\d{4})";
