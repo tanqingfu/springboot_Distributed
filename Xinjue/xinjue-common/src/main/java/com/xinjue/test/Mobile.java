@@ -31,6 +31,7 @@ public class Mobile {
     public static void regex(String mobile){
         String phone = mobile;
         String reget_mobile = "(\\d{3})\\d{4}(\\d{4})";
+        //$1、$2、……表示正则表达式里面第一个、第二个、……括号里面的匹配内容
         String phoneNumber = phone.replaceAll(reget_mobile,"$1****$2");
         System.out.println("正则phone中4*：" + phoneNumber);
     }
