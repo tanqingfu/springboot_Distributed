@@ -20,7 +20,7 @@ spring:
 #    username: xinjue #密码
 #  resources:
 #    static-locations: classpath:templates/,classpath:static/ #静态资源 页面 css 图片 js
-  ## 下面是整合freemarker start
+  ##下面是整合freemarker start
   freemarker:
     request-context-attribute: req  #req访问request
     suffix: .html  #后缀名
