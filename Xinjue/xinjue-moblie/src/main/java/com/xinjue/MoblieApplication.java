@@ -7,8 +7,8 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan(basePackages="com.xinjue.dao")
-@EnableScheduling
+@MapperScan(basePackages="com.xinjue.dao")  //注解扫描
+@EnableScheduling   //启动定时任务
 @ServletComponentScan //在springBoot启动时会扫描@WebServlet，并将该类实例化  用于生产验证码图片的
 public class MoblieApplication {
 
