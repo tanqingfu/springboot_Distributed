@@ -3,7 +3,7 @@ package com.xinjue.meta;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Table;
+
 /**
  * 权值对应解析结果表
  * @author Administrator

@@ -2,7 +2,7 @@ package com.xinjue.meta;
 
 import java.io.Serializable;
 
-import javax.persistence.Table;
+
 
 /**
  * 心态测评关联问题

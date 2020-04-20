@@ -3,7 +3,7 @@ package com.xinjue.meta;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Table;
+
 
 
 /**  添加测评问卷
