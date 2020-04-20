@@ -33,7 +33,7 @@ public class Test_task {
 	//*/5 * * * * ?  5秒执行一次
 	@Scheduled(cron = "*/5 * * * * ?")
 	public  void time(){
-		//System.out.println("每5秒执行一次："+ DateUtils.dateToString(new Date(),"yyyy-MM-dd HH:mm:ss"));
+		System.out.println("每5秒执行一次："+ DateUtils.dateToString(new Date(),"yyyy-MM-dd HH:mm:ss"));
 	}
 
 	//fixedRate 定义一个按一定频率执行的定时任务
