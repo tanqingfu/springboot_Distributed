@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.18:3306/xinjue?useOldAliasMetadataBehavior=true&amp;zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    password: xinjue  #用户名
+    username: xinjue #密码
+    resources:
+      static-locations: classpath:templates/,classpath:static/ #静态资源 页面 css 图片 js

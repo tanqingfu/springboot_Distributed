@@ -1,4 +1,4 @@
-######  Tomcat
+## Tomcat
 server:
   tomcat:
     uri-encoding: UTF-8
@@ -17,7 +17,7 @@ spring:
     username: xinjue #密码
   resources:
     static-locations: classpath:templates/,classpath:static/ #静态资源 页面 css 图片 js
-  ###########下面是整合freemarker start
+  ## 下面是整合freemarker start
   freemarker:
     request-context-attribute: req  #req访问request
     suffix: .html  #后缀名
@@ -40,9 +40,9 @@ spring:
     throw-exception-if-no-handler-found: true
     resources:
       add-mappings: false
-########## 下面是整合freemarker  end
+## 下面是整合freemarker  end
 
-####### 下面是整合mybatis start
+## 下面是整合mybatis start
 mybatis:
   #实体扫描，多个package用逗号或者分号分隔
   type-aliases-package: com.demo.meta,com.demo.vo
@@ -50,13 +50,13 @@ mybatis:
   #配置打印sql语句
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-####### 下面是整合mybatis end
+## 下面是整合mybatis end
 
-#####配置打印sql语句  com.demo.dao是你的接口路径
+## 配置打印sql语句  com.demo.dao是你的接口路径
 logging:
   level:
     com.demo.dao : debug
-###### 配置分页插件
+## 配置分页插件
 #pagehelper:
 #  dialect: mysql
 #  params: countSql
