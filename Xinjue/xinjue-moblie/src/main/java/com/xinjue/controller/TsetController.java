@@ -35,6 +35,12 @@ public class TsetController extends BaseController {
         List<User> list = userService.selectAll(InquiryCondition);
         JsonData json = null;
         if(list.size()>0){
+            for (int i=0;i<list.size();i++){
+                String reget_mobile = "(\\d{3})\\d{4}(\\d{4})";
+                //$1、$2、……表示正则表达式里面第一个、第二个、……括号里面的匹配内容
+                String phoneNumber = list.get(i).getMobile().replaceAll(reget_mobile,"$1****$2");
+                list.get(i).setMobile(phoneNumber);
+            }
             json = new JsonData(Globals.SUCCESS,"",list,total);
         }else{
             json = new JsonData(Globals.SYSTEM_BUSY,"","");
