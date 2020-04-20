@@ -8,6 +8,7 @@ public class Mobile {
         String mobile = "13123456789";
         substring(mobile);
         regex(mobile);
+        idCardNumber("123456789987654321");
     }
 
     /**
@@ -34,5 +35,18 @@ public class Mobile {
         //$1、$2、……表示正则表达式里面第一个、第二个、……括号里面的匹配内容
         String phoneNumber = phone.replaceAll(reget_mobile,"$1****$2");
         System.out.println("正则phone中4*：" + phoneNumber);
+    }
+
+    /**
+     * 正则表达式处理身份证号嘛
+     * @param idcard
+     */
+    public static void idCardNumber(String idcard){
+        String idCard = idcard;
+        //$1、$2、……表示正则表达式里面第一个、第二个、……括号里面的匹配内容
+        String regex_idcard = "(\\d{4})\\d{10}(\\w{4})";
+        String idCardNumber = idCard.replaceAll(regex_idcard,"$1**********$2");
+        System.out.println("身份证号长度："+idCard.length());
+        System.out.println("正则idCard中4*：" + idCardNumber);
     }
 }
