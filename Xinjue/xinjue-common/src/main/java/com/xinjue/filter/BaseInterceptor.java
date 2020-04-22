@@ -1,6 +1,6 @@
 package com.xinjue.filter;
 
-import com.demo.util.DateUtils;
+import com.xinjue.util.DateUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
